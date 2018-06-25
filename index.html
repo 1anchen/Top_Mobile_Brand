@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+        <meta charset="utf-8">
+        <title>Top Mobile List App</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <script src="js/app.js"></script>
+  </head>
+  <h1>Top Mobile List</h1>
+  <body>
+    <form id="main-form">
+      <div class="title-form">
+        <label for="title">Mobile Brand</label>
+        <input type="text" id="title" required>
+      </div>
+
+      <div class="statistic-form">
+        <label for="statistic">Market Share in %</label>
+        <input type="text" id="statistic" required>
+      </div>
+
+      <div class="selection-form">
+        <label for="selection">IOS / Android</label>
+        <select id="selection">
+           <option value="" disabled selected></option>
+           <option value="IOS">IOS</option>
+           <option value="Android">Android</option>
+        </select>
+      </div>
+      <div class="field">
+
+      </div>
+        <fieldset id="country">
+          <legend size= '50' >Country</legend>
+
+          <div>
+            <input type="radio" id="CHINA" name="mobile" checked />
+            <label for="china" value="CHINA">China</label>
+          </div>
+
+          <div>
+            <input type="radio" id="KOREA" name="mobile" />
+            <label for="korea" value="KOREA">Korea</label>
+          </div>
+
+          <div>
+            <input type="radio" id="USA" name="mobile" />
+            <label for="usa" value="USA">USA</label>
+          </div>
+        </fieldset>
+
+      </div>
+
+      <input type="submit" value="submit"/>
+    </form>
+
+    <h1>The List</h1>
+    <div id="mobile-list">
+      <table id="mobile-table" style="width:100%">
+        <tr>
+          <th>Brand</th>
+          <th>Market Share</th>
+          <th>Operation System</th>
+          <th>Country</th>
+        </tr>
+      </table>
+    </div>
+    <div id="piechart"></div>
+
+    </body>
+</html>
